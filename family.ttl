@@ -1,0 +1,30 @@
+@prefix g: <http://www.owl-ontologies.com/generations.owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cusType: <http:/cusTypes.org> .
+
+g:Gemma a g:Female, g:Person, g:Woman, g:Sister, g:Parent;
+	g:hasAge "25"^^xsd:integer ;
+	g:hasSex g:FemaleSex ;
+	g:weight "50"^^cusType:kilos;
+	g:hasSibling g:Matthew .
+
+g:Matthew a g:Brother, g:Male, g:OffSpring, g:Son, g:Person;
+	g:hasAge "23"^^xsd:integer ;
+	g:hasParent g:Peter ;
+	g:hasSex g:MaleSex ;
+	g:weight "69"^^cusType:kilos;
+	g:hasSibling g:Gemma .
+
+g:Peter a g:Father, g:Man, g:OffSpring, g:Parent, g:Person, g:Son, g:Male;
+	g:hasAge "48"^^xsd:integer ;
+	g:hasChild g:Matthew ;
+	g:hasParent g:William ;
+	g:weight "93"^^cusType:kilos;
+	g:hasSex g:MaleSex .
+
+g:William a g:GrandFather, g:GrandParent, g:Male, g:Man, g:Parent, g:Person, g:Father;
+	g:hasAge "71"^^xsd:integer ;
+	g:hasChild g:Peter ;
+	g:weight "93"^^cusType:kilos;
+	g:hasSex g:MaleSex .
