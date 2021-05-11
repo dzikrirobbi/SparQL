@@ -2,10 +2,10 @@ SPARQL is a query language used to retrieve data stored as RDF (Resource Descrip
 
 General query of SPARQL :
 
-PREFIX (Namespace Prefixes)
-SELECT (Result Set)
-FROM dan FROM NAMED (Dataset)
-WHERE (Query Triple Pattern)
-ORDER BY, DISTINCT, HAVING, LIMIT (Modifiers)
+- PREFIX (Namespace Prefixes)
+- SELECT (Result Set)
+- FROM dan FROM NAMED (Dataset)
+- WHERE (Query Triple Pattern)
+- ORDER BY, DISTINCT, HAVING, LIMIT (Modifiers)
 
 In This Repo, I create SPARQL Example with Python (RDFLib)
