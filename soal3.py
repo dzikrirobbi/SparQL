@@ -1,3 +1,5 @@
+# Select all Men, and optionally their children and their parents if this information is available
+
 import rdflib
 
 g = rdflib.Graph()
@@ -15,3 +17,8 @@ PREFIX g: <http://www.owl-ontologies.com/generations.owl#>
     
 for row in qres:
     print("%s has children %s and parent %s" % row)
+
+# Result :
+# http://www.owl-ontologies.com/generations.owl#Matthew has children None and parent http://www.owl-ontologies.com/generations.owl#Peter
+# http://www.owl-ontologies.com/generations.owl#Peter has children http://www.owl-ontologies.com/generations.owl#Matthew and parent http://www.owl-ontologies.com/generations.owl#William
+# http://www.owl-ontologies.com/generations.owl#William has children http://www.owl-ontologies.com/generations.owl#Peter and parent None

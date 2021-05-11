@@ -1,3 +1,5 @@
+# Select all pairs x-y where x is a father and y is his child. At the same time their weights should be different. Show the results in descending order of an age of the children
+
 import rdflib
 
 g = rdflib.Graph()
@@ -16,3 +18,7 @@ PREFIX g: <http://www.owl-ontologies.com/generations.owl#>
     """)
 for row in qres:
     print("%s has children %s with weight %s and age %s" % row)
+
+# Result :
+# http://www.owl-ontologies.com/generations.owl#Peter has children http://www.owl-ontologies.com/generations.owl#Matthew with weight 69 and age 23
+# http://www.owl-ontologies.com/generations.owl#William has children http://www.owl-ontologies.com/generations.owl#Peter with weight 93 and age 48

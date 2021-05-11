@@ -1,3 +1,5 @@
+# Select all parents older than 30 who do not have any information whether he/she has parent
+
 import rdflib
 
 g = rdflib.Graph()
@@ -14,3 +16,6 @@ PREFIX g: <http://www.owl-ontologies.com/generations.owl#>
     
 for row in qres:
     print("%s" % row)
+
+# Result :
+# http://www.owl-ontologies.com/generations.owl#William

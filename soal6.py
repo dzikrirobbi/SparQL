@@ -1,3 +1,5 @@
+# Return an amount of people that have child (or children)
+
 import rdflib
 
 g = rdflib.Graph()
@@ -12,3 +14,6 @@ PREFIX g: <http://www.owl-ontologies.com/generations.owl#>
 
 for row in qres:
     print("Counting : %s people's" % row)
+
+# Result :
+# Counting : 2 people's

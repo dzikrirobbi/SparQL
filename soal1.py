@@ -1,4 +1,5 @@
-# Test Git
+# Select all persons who belong to the class Father
+
 import rdflib
 
 g = rdflib.Graph()
@@ -11,11 +12,9 @@ PREFIX g: <http://www.owl-ontologies.com/generations.owl#>
     }
     """)
 
-# print("Name")
-# print("_______________________________________________________")
-# print(" ")
 for row in qres:
     print("%s" % row)
-    # print("_______________________________________________________")
-    # print(" ")
     
+# Result : 
+# http://www.owl-ontologies.com/generations.owl#Peter
+# http://www.owl-ontologies.com/generations.owl#William

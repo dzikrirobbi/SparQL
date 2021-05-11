@@ -1,3 +1,5 @@
+# Select all persons who belong to either of Brother or Sister class
+
 import rdflib
 
 g = rdflib.Graph()
@@ -13,3 +15,7 @@ PREFIX g: <http://www.owl-ontologies.com/generations.owl#>
     
 for row in qres:
     print("%s" % row)
+
+# Result :
+# http://www.owl-ontologies.com/generations.owl#Gemma
+# http://www.owl-ontologies.com/generations.owl#Matthew
